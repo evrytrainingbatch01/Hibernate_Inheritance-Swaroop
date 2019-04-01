@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 29, 2019 11:22:09 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="com.sp.hibernatetableperhierarchy.Partialcustomer" extends="com.sp.hibernatetableperhierarchy.Customer" table="PARTIALCUSTOMER" lazy="false">
+        <key>
+            <column name="ID" />
+        </key>
+        <property name="perprice" type="float">
+            <column name="PERPRICE" />
+        </property>
+        <property name="paramount" type="java.lang.String">
+            <column name="PARAMOUNT" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
